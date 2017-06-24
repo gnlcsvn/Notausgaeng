@@ -56,12 +56,16 @@ nav ul li{
   background-size: cover;
 }
 
-.jeff {
+/************************/
+/*		Sticker			*/
+/************************/
+
+.sticker {
 	position: fixed;
-	bottom: 0;
-	right: 0;
+	bottom: 20;
+	right: 20;
 }
 
-.jeff img {
-	width: 300px;
+.sticker img {
+	width: 200px;
 }
