@@ -1,7 +1,49 @@
 body {
 	font-family: Helvetica, Arial;
-  background: url(img/back1.png) repeat center center ; 
+  	background: url(img/back1.png) repeat center center; 
+}
 
+.content {
+	min-width: 768px;
+	max-width: 1200px;
+	float: left;
+}
+
+/************************/
+/*		Side-Bar		*/
+/************************/
+
+#internet {
+	display: none;
+}
+
+.side-bar {
+	position: relative;
+	width: 300px;
+	float: right;
+	padding: 0;
+	margin: 0;
+	margin-right: 8px;
+}
+@media only screen and (max-width: 1492px) {
+    .side-bar {
+    	float: left;
+    	margin-top: 20px;
+    }
+    #internet {
+    	display: block;
+    }
+}
+
+.side-bar img{
+	display: block;
+	position: relative;
+	width: 200px;
+	margin: 0 auto;
+}
+
+.side-bar iframe{
+	margin-bottom: 20px;
 }
 
 /************************/
