@@ -38,7 +38,7 @@ body {
 .side-bar img{
 	display: block;
 	position: relative;
-	width: 200px;
+	width: 100%;
 	margin: 0 auto;
 }
 
