@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Notausgäng</title>
         <meta name="description" content="Official Notausgäng Band Website ">
         <meta name="keywords" content="notausgäng, notausgaeng, bremen, punkrock, punk, rock, musik, bang, zerkratzt, goldenes haar, proberaum, straßenbahnmafia, facebook, dienotausgaeng, @dienotausgaeng">
@@ -12,32 +13,34 @@
     <body>
     <div class="content">
         <header>
-        <img src="img/logo.png" height="100">
-        <img src="img/band_cover.jpg" height="100">
-        <img src="img/test1.gif" height="100">
-        <a href="glitch.html"><img src="img/glitch.gif" height="100"></a>
-        <nav>
-            <ul>
-                <li><a href="http://notausgaeng.de/"><img src="img/home2.png"></a></li>
-                <li><a href="http://notausgaeng.de/bilder"><img src="img/bilder2.png"></a></li>
-            </ul>
-        </nav>
+        	<div>
+        		<img src="img/logo.png">
+	        	<img src="img/band_cover.jpg">
+	        	<img src="img/test1.gif">
+	        	<a href="glitch.html"><img src="img/glitch.gif"></a>
+        	</div>
+	        <nav>
+	            <ul class="navigation">
+	                <li class="navigation-item"><a href="http://notausgaeng.de/"><img src="img/home2.png"></a></li>
+	                <li class="navigation-item"><a href="http://notausgaeng.de/bilder"><img src="img/bilder2.png"></a></li>
+	            </ul>
+	        </nav>
         </header>
         <h1>Notausgäng Homepage</h1>
         <p>Herzlich Willkommen auf der offiziellen Homepage der Notausgäng. Viel Spaß mit unserem Multimediaangebot!</p>
         <h2 id="mitglieder">Mitglieder</h2>
-        <table>
+        <table class="table-list">
             <tr>
                 <td>Schlagzeug, Gesang</td>
-                <td>Toni</td>
+                <td align="right">Toni</td>
             </tr>
             <tr>
                 <td>Bass, Gesang</td>
-                <td>Niklas</td>
+                <td align="right">Niklas</td>
             </tr>
             <tr>
                 <td>Gesang, Gitarre</td>
-                <td>Joschi</td>
+                <td align="right">Joschi</td>
             </tr>
         </table>
 
@@ -45,61 +48,61 @@
 
         <h3>Bang (2017)</h3>
         <a href="https://open.spotify.com/album/31Mau4D8CBRwq4ZOyj8FHz" target="_blank">
-            <img src="img/Bang.jpg" width="250">
+            <img class="discography-image" src="img/Bang.jpg">
         </a>
-        <table>
+        <table class="table-list">
             <th>
                 <tr>
                     <td>Nr.</td>
                     <td>Titel</td>
-                    <td>Länge</td>
+                    <td align="right">Länge</td>
                 </tr>
             </th>
             <tbody>
                 <tr>
                     <td>1</td>
                     <td>Zerkratzt</td>
-                    <td>3:06</td>
+                    <td align="right">3:06</td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>Proberaum</td>
-                    <td>3:22</td>
+                    <td align="right">3:22</td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td>182 Bands</td>
-                    <td>2:43</td>
+                    <td align="right">2:43</td>
                 </tr>
                 <tr>
                     <td>4</td>
                     <td>Goldenes Haar</td>
-                    <td>2:42</td>
+                    <td align="right">2:42</td>
                 </tr>
                 <tr>
                     <td>5</td>
                     <td>Straßenbahnmafia</td>
-                    <td>2:21</td>
+                    <td align="right">2:21</td>
                 </tr>
                 <tr>
                     <td>6</td>
                     <td>Sale</td>
-                    <td>2:48</td>
+                    <td align="right">2:48</td>
                 </tr>
                 <tr>
                     <td>7</td>
                     <td>Zähne Aus Klavier</td>
-                    <td>3:35</td>
+                    <td align="right">3:35</td>
                 </tr>
                 <tr>
                     <td>8</td>
                     <td>Schwarz</td>
-                    <td>3:26</td>
+                    <td align="right">3:26</td>
                 </tr>
                 <tr>
                     <td>9</td>
                     <td>Das Beste Lied Der Welt</td>
-                    <td>4:03</td>
+                    <td align="right">4:03</td>
                 </tr>
             </tbody>
         </table>
@@ -107,15 +110,23 @@
 
         <h2 id="videos">Videos</h2>
         <h3>Musikvideos</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/OY0DJSOb7YU" frameborder="0" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/txaoXvUCtGA" frameborder="0" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/CaxrmHKsZiM" frameborder="0" allowfullscreen></iframe>
+        <div class="video-wrapper">
+        	<iframe class="video" src="https://www.youtube.com/embed/OY0DJSOb7YU" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+        	<iframe class="video" src="https://www.youtube.com/embed/txaoXvUCtGA" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+        	<iframe class="video" src="https://www.youtube.com/embed/CaxrmHKsZiM" frameborder="0" allowfullscreen></iframe>
+        </div>
         <h3>Live</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/A38aRNELtkk" frameborder="0" allowfullscreen></iframe>
+        <div class="video-wrapper">
+        	<iframe class="video" src="https://www.youtube.com/embed/A38aRNELtkk" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
     <div class="side-bar">
         <h2 id="internet">Internet</h2>
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdienotausgaeng%2F&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdienotausgaeng%2F&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
         <iframe src="https://open.spotify.com/embed?uri=spotify:album:31Mau4D8CBRwq4ZOyj8FHz" width="100%" height="380" frameborder="0" allowtransparency="true"></iframe>
 
         <footer>
