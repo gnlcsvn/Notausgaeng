@@ -187,6 +187,43 @@ table {
 }
 
 /************************/
+/*		Release			*/
+/************************/
+
+.release-content {
+  display: block;
+    margin: auto;
+    width: 50%;
+    max-width: 800px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.release-content {
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.release-content {
+		width: 90%;
+	}
+}
+
+.release-content img{
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.download-button {
+	float: left;
+}
+
+.download-button img{
+	width: 300px;
+}
+
+/************************/
 /*		Footer			*/
 /************************/
 
