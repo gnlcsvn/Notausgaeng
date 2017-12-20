@@ -234,18 +234,6 @@ table {
     max-width: 700px;
 }
 
-@media only screen and (max-width: 1024px) {
-	.release-content {
-		width: 70%;
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	.release-content {
-		width: 90%;
-	}
-}
-
 .release-content img{
   display: block;
   width: 100%;
@@ -258,6 +246,22 @@ table {
 .download-button img{
 	width: 400px;
 	margin-top: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.release-content {
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.release-content {
+		width: 90%;
+	}
+
+	.download-button img{
+		width: 300px;
+	}
 }
 
 /************************/
