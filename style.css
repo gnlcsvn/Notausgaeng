@@ -248,6 +248,18 @@ table {
 	margin-top: 20px;
 }
 
+.werbung {
+	position: fixed;
+	width: 500px;
+	height: 200px;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px; /* Negative half of height. */
+	margin-left: -250px;
+	cursor: pointer;
+}
+
+
 @media only screen and (max-width: 1024px) {
 	.release-content {
 		width: 70%;
@@ -260,6 +272,13 @@ table {
 	}
 
 	.download-button img{
+		width: 300px;
+	}
+	.werbung {
+		margin-left: -150px;
+		left: 50%;
+	}
+	.werbung img {
 		width: 300px;
 	}
 }

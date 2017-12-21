@@ -13,9 +13,11 @@
     <body>
     <div>
         <header>
-        	
+
         </header>
-        
+        <div class="werbung">
+          <img src="img/werbung.gif" />
+        </div>
         <div class="release-content">
             <div class="release-header">
                 <h1>OUT NOW!</h1>
@@ -29,6 +31,12 @@
         </div>
 
 
-        
+        <script type="text/javascript">
+          var w = document.querySelector('.werbung img');
+          w.addEventListener('click', hideWerbung);
+          function hideWerbung() {
+            w.style.display = 'none';
+          }
+        </script>
     </body>
 </html>
