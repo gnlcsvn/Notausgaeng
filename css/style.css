@@ -54,8 +54,15 @@ body{
 .wrapper{
   min-height: 100%;
 	background-image: url("../img/back_pattern1.png");
-    background-repeat: repeat;
-    background-color: #cccccc;
+  background-repeat: repeat;
+  background-color: #cccccc;
+  margin-top: 15px !important;
+}
+
+@media (max-width: 575px){
+  .wrapper {
+    margin-top: 0px !important;
+  }
 }
 
 @media (min-width: 1200px){
