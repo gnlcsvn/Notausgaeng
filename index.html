@@ -136,6 +136,19 @@
 
     <div class="break"></div>
 
+    <div class="concerts row justify-content-md-center  mt-5 mb-5">
+
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <h1>Konzerte</h1>
+        <div id="data"/></div>
+      </div>
+      <div class="col-lg-2"></div>    
+
+    </div>
+
+    <div class="break"></div>
+
     <div class="links row justify-content-md-center  mt-5 mb-5">
 
       <div class="col-lg-2"></div>
@@ -284,6 +297,93 @@
 <script>
     baguetteBox.run('.tz-gallery');
 </script>
+
+<!--Script for concert data-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+  var spData = null;
+  function doData(json) {
+      spData = json.feed.entry;
+  }
+
+  function drawCellWithLink(tr, val) {
+      var td = $('<a href="' + val + '" target="_blank" >Mehr Infos</a>');
+      tr.append(td);
+      return td;
+  }
+  function drawCell(tr, val) {
+      var td = $("<p/>");
+      tr.append(td);
+      td.append(val);
+      return td;
+  }
+  function drawRow(table, rowData) {
+    if (rowData == null) return null;
+    if (rowData.length == 0) return null;
+
+    //check whether concert was in the past
+    for(var c=0; c<rowData.length; c++) {
+
+      //Check the date, it is the first entry [0] and compare to today's date
+      if (c===0) {
+        var today = new Date();
+        var st = rowData[c];
+        var pattern = /(\d{2})\.(\d{2})\.(\d{4})/;
+        var date = new Date(st.replace(pattern,'$3-$2-$1'));
+        //alert(date);
+        //alert(date < today)
+
+        //If date lies in the past make the entry grey else make it black
+        if (date < today) {
+          var tr = $("<div/ style='color:grey;'>");
+        } else {
+          var tr = $("<div/>");
+        }
+      }
+    }
+
+    table.append(tr);
+    for(var c=0; c<rowData.length; c++) {
+
+      if (c===2) {
+        drawCellWithLink(tr, rowData[c]);
+      } else {
+        drawCell(tr, rowData[c]);
+      }
+
+      
+    }
+    return tr;
+  }
+  
+  function drawTable(parent) {
+    var table = $("<div/ class='table'>");
+    parent.append(table);
+    return table;
+  }
+  
+  function readData(parent) {
+      var data = spData;
+      var table = drawTable(parent);
+      var rowData = [];
+      
+      for(var r=0; r<data.length; r++) {
+          var cell = data[r]["gs$cell"];
+          var val = cell["$t"];
+          if (cell.col == 1) {
+              drawRow(table, rowData);
+              rowData = [];
+          }
+          rowData.push(val);
+      }
+      drawRow(table, rowData);
+  }
+  $(document).ready(function(){
+      readData($("#data"));
+  });
+  </script> 
+
+  <script src="https://spreadsheets.google.com/feeds/cells/1B9DQ809IAZ0M4zdiy98A400oT8XJ9bVV4ThAmeQYqeo/1/public/values?alt=json-in-script&callback=doData"></script>
 
 </body>
 
