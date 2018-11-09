@@ -136,12 +136,19 @@ nav{
   height: 100%;
 }
 
-.news img{
+.news .picture img{
   height: 300px;
   position: relative;
   display: block;
   margin: 0 auto;
   margin-bottom: 15px;
+}
+
+@media (max-width: 575px){
+  .news .picture img{
+  width: 100%;
+  height: auto;
+ }
 }
 
 .news h1 {
