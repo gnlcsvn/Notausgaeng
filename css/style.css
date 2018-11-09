@@ -127,6 +127,39 @@ nav{
     height: 100%;
 }
 
+.news {
+  padding: 20px;
+  border: dotted 3px grey;
+}
+
+.news .picture {
+  height: 100%;
+}
+
+.news img{
+  height: 300px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.news h1 {
+  text-align: center;
+}
+
+.news .links {
+  float: left;
+}
+
+.news .links p{
+  float: left;
+}
+
+.news .links a{
+  float: left;
+}
+
 /************************/
 /*    Intro              */
 /************************/
