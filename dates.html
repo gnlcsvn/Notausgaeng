@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<head>
+  <body><pre id='data'></pre></body>
+<script>
+  const onDataLoaded = (data) => {
+    const e20Content = data.feed.entry.find((entry) => entry.title.$t == 'A1').content.$t
+    document.getElementById('data').innerHTML = e20Content
+  }
+</script>
+<script src="https://spreadsheets.google.com/feeds/cells/13uXbuhh0hT7rRKt-ah24fy4_MkgEaTVRm4ORfIiT78Y/1/public/basic?alt=json-in-script&callback=onDataLoaded"></script>
+</body>
+</html> 
