@@ -291,6 +291,16 @@ nav{
 }
 
 /************************/
+/*    Booking     */
+/************************/
+
+.booking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/************************/
 /*    Footer            */
 /************************/
 
