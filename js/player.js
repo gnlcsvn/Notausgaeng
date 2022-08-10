@@ -17,21 +17,41 @@ jQuery(function ($) {
             extension = '',
             tracks = [{
                 "track": 1,
+                "name": "Mein Computer - Notausgäng",
+                "duration": "1:52",
+                "file": "meincomputer"
+            }, {
+                "track": 2,
+                "name": "Hermine - Notausgäng",
+                "duration": "2:58",
+                "file": "hermine"
+            }, {
+                "track": 3,
+                "name": "Ich hab kein Internet - Notausgäng",
+                "duration": "1:56",
+                "file": "ichhabkeininternet"
+            }, {
+                "track": 4,
+                "name": "High School Pop Punk - Notausgäng",
+                "duration": "3:11",
+                "file": "highschoolpoppunk"
+            }, {
+                "track": 5,
                 "name": "Jugendliebe - Notausgäng",
                 "duration": "2:14",
                 "file": "jugendliebe"
             }, {
-                "track": 2,
+                "track": 6,
                 "name": "Mach 2 - Notausgäng",
                 "duration": "2:11",
                 "file": "mach2"
             }, {
-                "track": 3,
+                "track": 7,
                 "name": "Zerkratzt - Notausgäng",
                 "duration": "3:06",
                 "file": "zerkratzt"
             }, {
-                "track": 4,
+                "track": 8,
                 "name": "Goldenes Haar - Notausgäng",
                 "duration": "2:42",
                 "file": "goldeneshaar"
